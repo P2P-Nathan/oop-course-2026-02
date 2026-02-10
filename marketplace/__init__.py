@@ -1,4 +1,6 @@
-from .marketplaces import Marketplace
+from .marketplace import Marketplace
+#    ^ relative import (from a sub-module in the same module as this)
 
-# This file is the entry point for the marketplace package, and it re-exports the Marketplace class for users to interact with.
-__all__ = ("Marketplace",)
+# Explicitly re-exported members (__all__ dunder attribute):
+
+__all__ = ("Marketplace", )
