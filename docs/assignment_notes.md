@@ -12,6 +12,9 @@ Flyweight came up a couple times in class, as well as factory pattern, pub/sub c
 ## Add validation for the methods and actions
 Its good practice but also shows an understanding of what is going on.  Use `if` to check items that you expect to see.  Assert is only for internal checking to make sure that you've written it right.  Assert can be used for cool testing performance, and example is in the marketplace.
 
+## Encapsulation errors
+Encapsulate items correctly for the single responsibility, expose the correct state of the game and correct methods to operate the game.  Don't over expose data that isn't required but make everything accessible safely.  You should be able to see the methods you need to work but not the internal methods we shouldn't use.  Don't let the user modify things that they shouldn't be able to, but they might be able to see them through a proxy for example.
+
 # AVOID these items
 
 ## Use of `super()`
