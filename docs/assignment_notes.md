@@ -15,6 +15,9 @@ Its good practice but also shows an understanding of what is going on.  Use `if`
 ## Encapsulation errors
 Encapsulate items correctly for the single responsibility, expose the correct state of the game and correct methods to operate the game.  Don't over expose data that isn't required but make everything accessible safely.  You should be able to see the methods you need to work but not the internal methods we shouldn't use.  Don't let the user modify things that they shouldn't be able to, but they might be able to see them through a proxy for example.
 
+## Modules are a source of Single Responsibility
+Classes that have a strong relationship should be in the same module, and modules should be loosely coupled.  SRP applies to the modules, so the interfaces, protocols, and types should be in the correct module for where they are used.  Items like descriptors and utilities can be in a utilities module or a descriptors module.
+
 # AVOID these items
 
 ## Use of `super()`
